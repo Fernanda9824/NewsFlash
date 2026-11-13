@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Encabezado de la aplicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEWSFLASH"
+            android:textColor="#183153"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu información, en el momento indicado."
+            android:textColor="#65758B"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="25dp" />
+
+        <!-- Estado de la sincronización -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESTADO DEL SERVICIO"
+            android:textColor="#183153"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Preparando sincronización..."
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:padding="17dp" />
+
+        <!-- Información de la última noticia -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ÚLTIMA NOTICIA CONSULTADA"
+            android:textColor="#183153"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingTop="25dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Aún no se han consultado noticias."
+            android:textColor="#334155"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="17dp" />
+
+        <!-- Fecha y hora de la consulta -->
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Última consulta: pendiente"
+            android:textColor="#65758B"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp" />
+
+        <!-- Botón de sincronización manual -->
+        <Button
+            android:id="@+id/btnSincronizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SINCRONIZAR AHORA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#183153" />
+
+        <!-- Botón para probar el Worker y la notificación -->
+        <Button
+            android:id="@+id/btnProbarNotificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROBAR NOTIFICACIÓN"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botón para abrir la noticia consultada -->
+        <Button
+            android:id="@+id/btnAbrirNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABRIR NOTICIA"
+            android:textColor="#183153"
+            android:backgroundTint="#DCE6F2"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NewsFlash - Sistema de alertas informativas"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingTop="28dp"
+            android:paddingBottom="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>
